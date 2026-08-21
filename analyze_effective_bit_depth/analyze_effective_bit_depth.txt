@@ -1,0 +1,16 @@
+If you have a 32-bit float file that actually contains 16-bit integer data:
+
+The 16-bit integer values range from $-32768$ to $32767$.
+When converted to float, they become values like $0.00003051757...$
+The "gap" between them is $1 / 32768 \approx 0.00003051757$.
+The script calculates $-\log_2(0.00003051757) = 15$.
+The result tells you clearly that even though the container is 32-bit, the information is only 16-bit.
+
+Important Limitations
+1. The "Noise Floor" Problem This script analyzes mathematical precision, not signal-to-noise ratio (SNR).
+
+If you have a 16-bit file but you recorded it in a room with a lot of analog hiss (noise), the "gaps" between samples will be filled by random noise.
+In that case, the script will report "32-bit" because the noise makes the values look continuous.
+Your goal (converting back to 16-bit) is still safe: If the script says it's 32-bit due to noise, converting to 16-bit will only slightly increase the noise floor, but it won't "lose" information that wasn't really there to begin with.
+
+2. Floating Point vs. Integer If the file is a "32-bit Float" file, the values are inherently continuous. However, if that float file was created by a process that truncated the data to 16-bit, the "gaps" will still exist mathematically, and this script will find them.
