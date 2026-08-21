@@ -1,0 +1,33 @@
+JELSTUDIO Software Suite - Project Credits
+-------------------------------------------------------------------------------
+
+Scripts:
+  - analyze_effective_bit_depth (v1.0.0)
+  - [Future Script Name] (v1.0.0)
+  - [Future Script Name] (v1.0.0)
+
+-------------------------------------------------------------------------------
+COPYRIGHT
+-------------------------------------------------------------------------------
+
+Copyright 2026 JELSTUDIO
+
+All rights reserved. This repository contains software developed by JELSTUDIO.
+
+-------------------------------------------------------------------------------
+THIRD-PARTY SOFTWARE CREDITS
+-------------------------------------------------------------------------------
+The following software components are used across various scripts in this 
+repository. Please refer to their respective licenses.
+
+* NumPy: Licensed under the BSD 3-Clause License.
+* SoundFile: Licensed under the MIT License.
+* Tkinter: Part of the Python Standard Library (Python Software Foundation License).
+* [Next Library]: [License Type]
+
+-------------------------------------------------------------------------------
+ACKNOWLEDGMENTS
+-------------------------------------------------------------------------------
+
+Special thanks to the open-source community for the tools that make 
+this suite of utilities possible.
