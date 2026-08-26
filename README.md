@@ -3,15 +3,17 @@
 A collection of various audio-tools.
 
 ## Available tools
-List of currently available tools:
+List of currently available tools (Which may contain bugs or errors I haven't discovered yet. I use AI to assist with the coding and bug-hunting):
 
 - **analyze_effective_bit_depth**:
    - version 1.0.0
    - Open a wave-file and check the bit-depth of the actual audio-samples. Can be used to see if, for example, a 24-bit audio-file is really 24-bit audio-quality. It will report the bit-depth resolution of the actual audio-content by measuring the gaps in the sample-values.
 
-- **02 empty place-holder**:
+- **slewrate_analysis_copy_limiter**:
    - version 1.0.0
-   - Empty place-holder for future-use.
+   - A slew-rate limiter attempting to do so with high sound-quality. It can load audio-files and create slew-rate limit presets from them which can then be used on other files (Basically a type of copy-paste). It can batch-process so multiple files can be slew-rate limited to one slew-rate limit automatically. Files are never over-written but created with "slewed" attached to the name (If files with the same name already exist then v1, v2, v3, etc, are added to the name), in the user-chosen folder.
+   - You process a finished master audio-file directly, making this slew-rate limitation the final step (Audio-levels are unchanged, so dithering should be untouched. File is exported at the same bit-depth and sample-rate as input. Since slew-rate limiting takes energy away from the audio, except at very low over-sampling factors where aliasing may contribute to the overall energy, it should never clip. At the default settings you should see a reduction of the audio-gain between 0.05 to 0.1 dB FS after slew-rate limitation)
+   - Use the highest over-sampling factor you have patience for (With batch-processing you can leave it running over-night, or if you go for the max OS-factor of 4096; while you go on an extended holiday.... Batch-processing is multi-threaded, but don't expect miracles)
 
 ## Prerequisites
 Before installing, ensure you have the following software installed on your Windows system:
