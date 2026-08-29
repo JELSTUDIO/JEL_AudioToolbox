@@ -14,10 +14,15 @@ List of currently available tools (Which may contain bugs or errors I haven't di
    - Open a clean sine-sweep audio-file and its relative dirty sine-sweep audio-file so the clean is subtracted and only the residual aliasing noise is displayed. It saves this spectrum-result (Using the file-name of the dirty sine-sweep audio-file) as a png-image at 1600x900 pixels in your chosen save-folder. Use this to compare aliasing between various processes.
 
 - **slewrate_analysis_copy_limiter**:
+   - version 1.1.0
+   - Added an average measurement mode that scales with loudness. This mode is especially useful to self-apply slew-rate limiting (Applying the measured slew-rate limit to the same song that you measured) to tame an unruly song. Be careful though, as it can also dim a song if the song doesn't have excessive slew-rate to begin with.
    - version 1.0.0
    - A slew-rate limiter attempting to do so with high sound-quality. It can load audio-files and create slew-rate limit presets from them which can then be used on other files (Basically a type of copy-paste). It can batch-process so multiple files can be slew-rate limited to one slew-rate limit automatically. Files are never over-written but created with "slewed" attached to the name (If files with the same name already exist then v1, v2, v3, etc, are added to the name), in the user-chosen folder.
    - You process a finished master audio-file directly, making this slew-rate limitation the final step (Audio-levels are unchanged, so dithering should be untouched. File is exported at the same bit-depth and sample-rate as input. Since slew-rate limiting takes energy away from the audio, except at very low over-sampling factors where aliasing may contribute to the overall energy, it should never clip. At the default settings you should see a reduction of the audio-gain between 0.05 to 0.1 dB FS after slew-rate limitation)
    - Use the highest over-sampling factor you have patience for (With batch-processing you can leave it running over-night, or if you go for the max OS-factor of 4096; while you go on an extended holiday.... Batch-processing is multi-threaded, but don't expect miracles)
+
+## Windows Executable Releases
+When looking for a Windows Executable, in the releases section, you may have to scroll down to find a particular tool, as I only upload the individual tool that has been updated (To avoid re-uploading tools that haven't been updated into each new release). This may be a bit confusing, but in the list of tools above this text, you can see which version is the latest of each individual tool (It's always the first line after the tool-name), which is then the one you should look for in between the various releases (You'll figure it out ;) )
 
 ## Prerequisites
 Before installing, ensure you have the following software installed on your Windows system:
