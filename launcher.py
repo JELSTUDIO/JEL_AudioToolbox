@@ -10,6 +10,7 @@ import os
 # =============================================================================
 TOOLS = [
     {"name": "Audio Bit-Depth Analyzer", "path": "analyze_effective_bit_depth/analyze_effective_bit_depth.py"},
+    {"name": "Aliasing Analyzer", "path": "aliasing_analysis/aliasing_analysis.py"},
     {"name": "Slewrate Analysis Copy Limiter", "path": "slewrate_analysis_copy_limiter/slewrate_analysis_copy_limiter.py"},
     {"name": "Placeholder, do not click this one", "path": "subfolder/filename.py"},
 ]

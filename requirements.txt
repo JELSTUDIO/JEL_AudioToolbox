@@ -1,2 +1,7 @@
 numpy
 soundfile
+scipy
+numba
+psutil
+matplotlib
+librosa

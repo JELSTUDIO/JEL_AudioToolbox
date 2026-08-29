@@ -20,6 +20,8 @@ THIRD-PARTY SOFTWARE CREDITS
 The following software components are used across various scripts in this 
 repository. Please refer to their respective licenses.
 
+* librosa: Licensed under the BSD 3-Clause License.
+* matplotlib: Licensed under the Matplotlib License.
 * Numba: Licensed under the BSD 3-Clause License.
 * NumPy: Licensed under the BSD 3-Clause License.
 * psutil: Licensed under the BSD 3-Clause License.
