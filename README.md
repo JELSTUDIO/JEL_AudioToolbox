@@ -9,6 +9,10 @@ List of currently available tools (Which may contain bugs or errors I haven't di
    - version 1.0.0
    - Open a wave-file and check the bit-depth of the actual audio-samples. Can be used to see if, for example, a 24-bit audio-file is really 24-bit audio-quality. It will report the bit-depth resolution of the actual audio-content by measuring the gaps in the sample-values.
 
+- **aliasing_analysis**:
+   - version 1.0.0
+   - Open a clean sine-sweep audio-file and its relative dirty sine-sweep audio-file so the clean is subtracted and only the residual aliasing noise is displayed. It saves this spectrum-result (Using the file-name of the dirty sine-sweep audio-file) as a png-image at 1600x900 pixels in your chosen save-folder. Use this to compare aliasing between various processes.
+
 - **slewrate_analysis_copy_limiter**:
    - version 1.0.0
    - A slew-rate limiter attempting to do so with high sound-quality. It can load audio-files and create slew-rate limit presets from them which can then be used on other files (Basically a type of copy-paste). It can batch-process so multiple files can be slew-rate limited to one slew-rate limit automatically. Files are never over-written but created with "slewed" attached to the name (If files with the same name already exist then v1, v2, v3, etc, are added to the name), in the user-chosen folder.
