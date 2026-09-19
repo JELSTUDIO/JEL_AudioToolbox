@@ -10,6 +10,8 @@ List of currently available tools (Which may contain bugs or errors I haven't di
    - Open a wave-file and check the bit-depth of the actual audio-samples. Can be used to see if, for example, a 24-bit audio-file is really 24-bit audio-quality. It will report the bit-depth resolution of the actual audio-content by measuring the gaps in the sample-values.
 
 - **aliasing_analysis**:
+   - version 1.1.0
+   - Now has locked Y-scale so multiple images can be directly compared. The saved png-image is now 2400x1350 pixels.
    - version 1.0.0
    - Open a clean sine-sweep audio-file and its relative dirty sine-sweep audio-file so the clean is subtracted and only the residual aliasing noise is displayed. It saves this spectrum-result (Using the file-name of the dirty sine-sweep audio-file) as a png-image at 1600x900 pixels in your chosen save-folder. Use this to compare aliasing between various processes.
 
@@ -22,7 +24,8 @@ List of currently available tools (Which may contain bugs or errors I haven't di
    - Use the highest over-sampling factor you have patience for (With batch-processing you can leave it running over-night, or if you go for the max OS-factor of 4096; while you go on an extended holiday.... Batch-processing is multi-threaded, but don't expect miracles)
 
 ## Windows Executable Releases
-When looking for a Windows Executable, in the releases section, you may have to scroll down to find a particular tool, as I only upload the individual tool that has been updated (To avoid re-uploading tools that haven't been updated into each new release). This may be a bit confusing, but in the list of tools above this text, you can see which version is the latest of each individual tool (It's always the first line after the tool-name), which is then the one you should look for in between the various releases (You'll figure it out ;) )
+As of 20260919 I will not be making new Windows-executable files. They're simply too large compared to the python-scripts to be worth it. The script itself is less than 0.05 megabytes while the exe file is over 100 megabytes. Clearly that's bonkers. Installing Python on your Windows-machine is simply the way to go :)
+Original pre-20260919 text in this block was this: When looking for a Windows Executable, in the releases section, you may have to scroll down to find a particular tool, as I only upload the individual tool that has been updated (To avoid re-uploading tools that haven't been updated into each new release). This may be a bit confusing, but in the list of tools above this text, you can see which version is the latest of each individual tool (It's always the first line after the tool-name), which is then the one you should look for in between the various releases (You'll figure it out ;) )
 
 ## Prerequisites
 Before installing, ensure you have the following software installed on your Windows system:
